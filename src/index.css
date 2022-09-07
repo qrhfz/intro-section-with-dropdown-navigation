@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .heading-lg {
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  .body-md {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .body-sm {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .button-text {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.25px;
+  }
+
+  .dropdown-btn[data-value=true]::after {
+    content: url(images/icon-arrow-up.svg);
+    padding-left: 1rem;
+  }
+
+  .dropdown-btn[data-value=false]::after {
+    content: url(images/icon-arrow-down.svg);
+    padding-left: 1rem;
+  }
+}
