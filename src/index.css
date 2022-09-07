@@ -4,8 +4,16 @@
 
 @layer components {
   .heading-lg {
-    font-size: 80px;
-    line-height: 80px;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -0.5px
+  }
+
+  @media screen and (min-width:1024px) {
+    .heading-lg {
+      font-size: 80px;
+      line-height: 80px;
+    }
   }
 
   .body-md {
@@ -33,4 +41,40 @@
     content: url(images/icon-arrow-down.svg);
     padding-left: 1rem;
   }
+
+  .btn-1 {
+    @apply outline outline-2 bg-white text-black py-3 px-6 rounded-2xl button-text;
+  }
+
+  .btn-2 {
+    @apply bg-black text-white py-3 px-6 rounded-2xl button-text;
+  }
+
+  .main-grid {
+    grid-template-areas:
+      "headline hero"
+      "sponsor hero";
+    grid-template-rows: 1fr auto;
+  }
+
+  .main-grid .headline {
+    grid-area: headline;
+  }
+
+  .main-grid .hero {
+    grid-area: hero;
+  }
+
+  .main-grid .sponsor {
+    grid-area: sponsor;
+  }
+
+  .nav-dropdown-items {
+    display: none;
+  }
+
+  .nav-dropdown:hover .nav-dropdown-items {
+    display: block;
+  }
+
 }

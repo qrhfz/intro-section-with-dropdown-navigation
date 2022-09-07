@@ -17,10 +17,10 @@ export function Drawer() {
     const { active, setActive } = useContext(DrawerContext)
 
     return (
-        <div className={(active ? "block" : "hidden") + " fixed top-0 whitespace-nowrap"}>
+        <div className={(active ? "block" : "hidden") + " fixed top-0 whitespace-nowrap "}>
             <div className="fixed opacity-80 h-screen w-screen bg-black z-10">
             </div>
-            <div className="fixed right-0 w-60 h-screen bg-white z-20">
+            <div className="fixed right-0 w-60 h-screen bg-white z-20 ">
                 <button
                     onClick={e => {
                         setActive(false);
@@ -28,7 +28,7 @@ export function Drawer() {
                     className="ml-auto p-5 mb-3 block">
                     <img src="/images/icon-close-menu.svg" alt="" />
                 </button>
-                <div className="flex flex-col gap-4 pl-6">
+                <div className="flex flex-col gap-4 px-6">
                     <div>
                         <a href="#"
                             data-value={dropdown1}
@@ -81,6 +81,9 @@ export function Drawer() {
                     </div>
                     <div><a href="#">Careers</a></div>
                     <div><a href="#">About</a></div>
+                    <div className="h-8"></div>
+                    <button>Login</button>
+                    <button className="btn-1">Register</button>
                 </div>
             </div>
 
