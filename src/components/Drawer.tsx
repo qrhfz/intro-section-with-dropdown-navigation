@@ -20,7 +20,7 @@ export function Drawer() {
         <div className={(active ? "block" : "hidden") + " fixed top-0 whitespace-nowrap "}>
             <div className="fixed opacity-80 h-screen w-screen bg-black z-10">
             </div>
-            <div className="fixed right-0 w-60 h-screen bg-white z-20 ">
+            <div className="fixed right-0 w-2/3 h-screen bg-white z-20 ">
                 <button
                     onClick={e => {
                         setActive(false);

@@ -17,6 +17,7 @@ function App() {
           {/* hero */}
           <div className="hero">
             <img
+              className='w-full'
               src="/images/image-hero-mobile.png"
               alt="hero image"
               srcSet='/images/image-hero-mobile.png 750w,
@@ -31,10 +32,10 @@ function App() {
                           px-4 lg:p-0
                           text-center lg:text-left
                           ">
-            <h1 className="heading-lg text-black font-bold">
+            <h1 className="heading-lg text-black font-bold mb-4 lg:mb-0">
               Make remote work
             </h1>
-            <p className='body-m mb-1 max-w-[50ch]'>
+            <p className='body-m max-w-[50ch] mb-6 lg:mb-0'>
               Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
             </p>
             <button className='btn-2 hover:btn-1'>
