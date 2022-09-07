@@ -43,7 +43,7 @@
   }
 
   .btn-1 {
-    @apply outline outline-2 bg-white text-black py-3 px-6 rounded-2xl button-text;
+    @apply outline outline-[1px] outline-grey-medium bg-white text-black py-3 px-6 rounded-2xl button-text;
   }
 
   .btn-2 {
@@ -55,6 +55,7 @@
       "headline hero"
       "sponsor hero";
     grid-template-rows: 1fr auto;
+    grid-template-columns: 1.1fr 1fr;
   }
 
   .main-grid .headline {
@@ -71,6 +72,18 @@
 
   .nav-dropdown-items {
     display: none;
+  }
+
+  .nav-dropdown::after {
+    content: url(images/icon-arrow-down.svg);
+    padding-left: 0.5rem;
+    position: relative;
+    display: inline-block;
+    bottom: 2px;
+  }
+
+  .nav-dropdown:hover::after {
+    content: url(images/icon-arrow-up.svg);
   }
 
   .nav-dropdown:hover .nav-dropdown-items {

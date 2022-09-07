@@ -6,6 +6,9 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: 'Epilogue, Helvetica, Arial, sans-serif',
+    },
     colors: {
       ...colors,
       black: "#151515",
@@ -15,6 +18,7 @@ module.exports = {
         'height': 'height',
         'spacing': 'margin, padding',
       },
+
       colors: {
         "white-almost": "#FAFAFA",
         "grey-light": "#ADADAD",

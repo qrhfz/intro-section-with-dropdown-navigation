@@ -4,31 +4,37 @@ import { Nav } from './components/Nav'
 
 function App() {
 
-
   return (
     <DrawerProvider>
       <div className="App body-md text-grey-medium pb-24">
         <Nav></Nav>
         <div className="
+        grid gap-12 lg:gap-x-32 lg:gap-y-0
         lg:main-grid
-        lg:max-w-[1200px] lg:mx-auto 
-        grid gap-12 lg:gap-32 lg:grid-cols-2
+        lg:max-w-[1145px] lg:mx-auto 
         mt-16">
 
           {/* hero */}
-          <img className='hero | w-screen'
-            src="/images/image-hero-mobile.png"
-            alt="hero image"
-            srcSet='/images/image-hero-mobile.png 750w,
+          <div className="hero">
+            <img
+              src="/images/image-hero-mobile.png"
+              alt="hero image"
+              srcSet='/images/image-hero-mobile.png 750w,
             /images/image-hero-desktop.png 960w'
-            sizes='(max-width: 1024px) 30vw, 100vw' />
+              sizes='(max-width: 1024px) 30vw, 100vw' />
+          </div>
 
           {/* headline */}
-          <div className="headline | flex flex-col lg:justify-center items-center lg:items-start text-center lg:text-left px-1">
-            <h1 className="heading-lg mb-4 text-black font-bold">
+          <div className="headline | flex flex-col 
+                          lg:gap-12 lg:justify-center 
+                          items-center lg:items-start
+                          px-4 lg:p-0
+                          text-center lg:text-left
+                          ">
+            <h1 className="heading-lg text-black font-bold">
               Make remote work
             </h1>
-            <p className='body-m mb-6'>
+            <p className='body-m mb-1 max-w-[50ch]'>
               Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
             </p>
             <button className='btn-2 hover:btn-1'>
