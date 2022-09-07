@@ -17,7 +17,7 @@ export function Nav() {
             <div className="hidden lg:flex flex-row gap-10">
                 <div className="nav-dropdown | relative">
                     <a href="#">Features</a>
-                    <div className="nav-dropdown-items | absolute p-6 shadow-2xl rounded-2xl">
+                    <div className="nav-dropdown-items">
                         <NavDropdownItem image="/images/icon-todo.svg" text="Todo List" />
                         <NavDropdownItem image="/images/icon-calendar.svg" text="Calendar" />
                         <NavDropdownItem image="/images/icon-reminders.svg" text="Reminders" />
@@ -26,7 +26,7 @@ export function Nav() {
                 </div>
                 <div className="nav-dropdown | relative">
                     <a href="#">Company</a>
-                    <div className="nav-dropdown-items | absolute p-6 shadow-2xl rounded-2xl">
+                    <div className="nav-dropdown-items">
                         <NavDropdownItem text="History" />
                         <NavDropdownItem text="Our Team" />
                         <NavDropdownItem text="Blog" />

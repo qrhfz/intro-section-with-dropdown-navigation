@@ -70,9 +70,7 @@
     grid-area: sponsor;
   }
 
-  .nav-dropdown-items {
-    display: none;
-  }
+
 
   .nav-dropdown::after {
     content: url(images/icon-arrow-down.svg);
@@ -86,8 +84,13 @@
     content: url(images/icon-arrow-up.svg);
   }
 
+  .nav-dropdown-items {
+    @apply absolute flex-col gap-4 p-6 shadow-2xl rounded-2xl;
+    display: none;
+  }
+
   .nav-dropdown:hover .nav-dropdown-items {
-    display: block;
+    display: flex;
   }
 
 }
